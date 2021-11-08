@@ -1,0 +1,88 @@
+.l-concept {
+  position: relative;
+  margin-top: 162px;
+  margin-bottom: 220px;
+  height: 100%;
+  @include breakpoint-down(mlarge) {
+    margin-top: 120px;
+    margin-bottom: 120px;
+  }
+
+  &__img {
+    background-image: url("../images/desktop/image-interactive.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center left;
+    background-position: fit;
+    max-width: 750px;
+    min-height: 50vh;
+    transform-origin: left;
+    object-fit: cover;
+    overflow: hidden;
+    @include breakpoint-down(mlarge) {
+      margin: 0 auto;
+    }
+    @include breakpoint-down(small) {
+      background-image: url(../images/mobile/image-interactive.jpg);
+      min-height: 30vh;
+    }
+    //isIntersecting
+    // &.inview {
+    //   min-height: 30vh;
+    // }
+  }
+
+  &__inner {
+    position: absolute;
+    top: 30%;
+    right: 28px;
+    background-color: $white;
+    max-width: 500px;
+    // min-height: 40vh;
+    padding: 100px 0 0 100px;
+    @include breakpoint-down(mlarge) {
+      position: static;
+      text-align: center;
+      margin: 0 auto;
+      padding: 100px 30px 0;
+    }
+    @include breakpoint-down(small) {
+      padding-top: 60px;
+    }
+
+    .l-concept__title {
+      padding-bottom: 40px;
+      @include breakpoint-down(mlarge) {
+        padding-bottom: 40px;
+      }
+      @include breakpoint-down(small) {
+        padding-bottom: 30px;
+      }
+    }
+    .l-concept__text {
+      padding-bottom: 10px;
+    }
+  }
+}
+
+//Js animation
+
+.mask-container {
+  width: 70%;
+  position: relative;
+  @include breakpoint-down(medium) {
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+.mask {
+  visibility: hidden;
+  position: relative;
+  width: 80%;
+  height: 80%;
+  overflow: hidden;
+  @include breakpoint-down(medium) {
+    width: 100%;
+    height: 100%;
+  }
+}

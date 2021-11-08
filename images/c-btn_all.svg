@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #1a1b1b;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="c-btn_all.svg" class="cls-1" d="M1324,1152h6v6h-6v-6Zm10,0h6v6h-6v-6Zm-10,10h6v6h-6v-6Zm10,0h6v6h-6v-6Z" transform="translate(-1324 -1152)"/>
+</svg>
